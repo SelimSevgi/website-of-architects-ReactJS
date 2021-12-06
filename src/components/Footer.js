@@ -102,7 +102,16 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          © 2021<span> All Rights Reserved</span>
+          © 2021
+          <span> All Rights Reserved</span> <br />
+          <span>created by</span>
+          <a
+            style={{ color: "#fff", padding: 10 }}
+            href="https://github.com/SelimSevgi"
+            target="_blank"
+          >
+            Selim Sevgi
+          </a>
         </div>
       </div>
     </div>
