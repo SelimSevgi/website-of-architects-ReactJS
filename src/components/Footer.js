@@ -51,7 +51,7 @@ export default function Footer() {
                 <p>
                   <i className="fa fa-map-marker-alt"></i>
                 </p>
-                <p>Merkez / Malatya</p>
+                <p>Türkiye</p>
               </div>
               <div className="contact-item">
                 <p>
