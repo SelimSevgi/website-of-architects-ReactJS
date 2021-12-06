@@ -63,7 +63,7 @@ export default function Footer() {
                 <p>
                   <i className="fa fa-envelope"></i>
                 </p>
-                <p>slmsvg44@gmail.com</p>
+                <p>44ssevgi@gmail.com</p>
               </div>
             </ul>
           </div>
