@@ -436,6 +436,94 @@ color: white;}
   font-weight: bold;
 }
 
+.gallery{
+  display: flex;
+    justify-content: start;
+  flex-direction: column;
+  width: 1440px;
+}
+.gallery-header{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+
+}
+
+.gallery-head{
+  justify-content: flex-start;
+  text-align: start;
+  line-height: 64px;
+  color: #E5E5E5;  margin: 0px;
+  padding: 0px;
+}
+.gallery-head1{
+  justify-content: flex-start;
+  text-align: start;
+  line-height: 64px;
+  color: black;  margin: 0px;
+  padding: 0px;
+}
+
+.pro{
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.pro-header{
+  
+}
+.pro-header h1{
+  
+  color: black;
+}
+.pro-header-gri{
+color: #E5E5E5;
+
+}
+
+.pro-list-item{
+  background: #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  margin: 55px 0px;
+}
+.pro-list-right{
+  padding-right: 50px;
+}
+.pro-list-right img{
+  width: 670px;
+  height: 435px;
+  object-fit: cover;
+}
+.pro-list-left{
+  
+  padding: 20px 0px;
+}
+.pro-list-left h2{
+  color: grey;
+  font-weight: 300;
+  font-size: 40px;
+}
+.pro-list-p{
+  padding: 30px 100px 50px 0;
+}
+.pro-list-p p{
+    font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+.pro-list-btn{
+ 
+}
+.pro-list-btn button{
+  background: white;
+  border: none; width: 222px;
+  height: 71px;
+}
+.pro-modal{
+  width: 1440px !important;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

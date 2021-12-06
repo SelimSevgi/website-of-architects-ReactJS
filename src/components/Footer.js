@@ -51,7 +51,7 @@ export default function Footer() {
                 <p>
                   <i className="fa fa-map-marker-alt"></i>
                 </p>
-                <p>1234 Sample Street Austin Texas 78704</p>
+                <p>Merkez / Malatya</p>
               </div>
               <div className="contact-item">
                 <p>
@@ -63,7 +63,7 @@ export default function Footer() {
                 <p>
                   <i className="fa fa-envelope"></i>
                 </p>
-                <p>sampleemail@gmail.com</p>
+                <p>slmsvg44@gmail.com</p>
               </div>
             </ul>
           </div>
@@ -71,14 +71,14 @@ export default function Footer() {
             <h2> Social Media</h2>
             <div className="social-media-item">
               <a
-                href="https://tr-tr.facebook.com/"
+                href="https://github.com/SelimSevgi"
                 target="_blank"
                 rel="noreferrer"
               >
-                <i className="fa fa-facebook-square fa-2x"></i>
+                <i class="fa fa-github fa-2x"></i>
               </a>
               <a
-                href="https://tr.linkedin.com/"
+                href="https://www.linkedin.com/in/selim-sevgi-685743150/"
                 target="_blank"
                 rel="noreferrer"
               >
