@@ -521,8 +521,59 @@ color: #E5E5E5;
   border: none; width: 222px;
   height: 71px;
 }
-.pro-modal{
-  width: 1440px !important;
+
+.pro-exp-modal{
+  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 40px 40px 40px;
+}
+.pro-exp-header{
+  display: flex;
+
+justify-content: center;
+}
+.pro-exp-header p{
+color: black;
+font-size: 30px;
+
+}
+.pro-exp-head-gri{
+  color: grey;
+}
+.pro-exp-up{
+  padding: 0 0 20px 0;
+}
+.pro-exp-up img{
+  height: 200px;
+  width: 1300px;
+object-fit: cover;
+}
+.pro-exp-mid{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1300px;
+}
+.pro-exp-left {
+  width: 500px;
+  
+}
+.pro-exp-left img{
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+}
+.pro-exp-right{
+
+  justify-content: center;
+padding-bottom: 20px;
+}
+.pro-exp-down img{
+height: 200px;
+  width: 1300px;
+  object-fit: cover;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
