@@ -75,7 +75,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fa fa-github fa-2x"></i>
+                <i className="fa fa-github fa-2x"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/selim-sevgi-685743150/"
@@ -109,6 +109,7 @@ export default function Footer() {
             style={{ color: "#fff", padding: 10 }}
             href="https://github.com/SelimSevgi"
             target="_blank"
+            rel="noreferrer"
           >
             Selim Sevgi
           </a>
