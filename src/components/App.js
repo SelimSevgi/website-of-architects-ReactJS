@@ -5,7 +5,7 @@ import Main from "./Main";
 import Gallery from "./Gallery";
 import Projects from "./Projects";
 import Certification from "./Certification";
-import Contacts from "./Contact";
+import Contact from "./Contact";
 import Footer from "./Footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,7 +19,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certification" element={<Certification />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

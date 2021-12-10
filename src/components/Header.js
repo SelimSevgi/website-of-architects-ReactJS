@@ -5,7 +5,7 @@ const navs = [
   { href: "/gallery", title: "Gallery" },
   { href: "/projects", title: "projects" },
   { href: "/certification", title: "certification" },
-  { href: "/contacts", title: "contacts" },
+  { href: "/contact", title: "contact" },
 ];
 
 export default function Header() {
