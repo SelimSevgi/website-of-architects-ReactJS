@@ -13,9 +13,11 @@ export default function Header() {
     <>
       <div className="header-color">
         <div className="header">
-          <div className="header-logo">
-            <img src="../images/footer.png" alt="noreferrer" />
-          </div>
+          <a href="/" rel="noreferrer">
+            <div className="header-logo">
+              <img src="../images/footer.png" alt="noreferrer" />
+            </div>
+          </a>
           <div className="header-navigation">
             {navs.map((nav, i) => (
               <a key={i} href={nav.href}>

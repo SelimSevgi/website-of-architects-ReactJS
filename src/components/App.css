@@ -40,15 +40,34 @@
   width: 140px;
   height: 80px;
   object-fit: cover;
+  transform:  rotateY(180deg);
+  transition: 0.5s;
 }
+.header-logo img:hover{
+  transform:  rotateY(0deg);
+  width: 140px;
+
+  
+}
+
 .header-navigation > a:nth-child(1){
 
  border-bottom: 2px solid white;
  line-height: 20px;
  border-top: 2px solid white;
   line-height: 20px;
+  
+  transition:  0.5s ;
+
 }
 
+.header-navigation > a:nth-child(1):hover{
+  border-bottom: 2px solid red;
+ line-height: 20px;
+ border-top: 2px solid red;
+  line-height: 20px;
+  
+}
 .header-navigation {
   display: flex;
   gap: 2em;
@@ -70,6 +89,17 @@
   text-decoration: none;
   color:white;
   padding-top: 5px;
+  transition: all 0.5s;
+
+}
+
+.header-navigation>a:nth-child(2):hover,
+.header-navigation>a:nth-child(3):hover,
+.header-navigation>a:nth-child(4):hover,
+.header-navigation>a:nth-child(5):hover
+{
+  color: red;
+  font-weight: bolder;
 }
 .main {
   margin-top: 20px;
@@ -128,6 +158,13 @@
   letter-spacing: 20%;
   width: 227px;
   height: 72px;
+  border:none;
+  transition: 0.5s;
+}
+.about-right-bttn:hover{
+    background: #333333;
+  color: red;
+  font-weight: bolder;
 }
 
 .foto1 {
@@ -289,6 +326,13 @@ a{
   color: white;
   line-height: 12px;
   letter-spacing: 20%;
+  border: none;
+  transition: 0.5s;
+}
+.our-pro-bttn>button:hover{
+    background: white;
+  color: red;
+  font-weight: bolder;
 }
 .contact{
   display: flex;
@@ -339,6 +383,13 @@ textarea::placeholder{
   width: 221px;
   color: white;
   background-color: #2C2C2C;
+  border: none;
+  transition: 0.5s;
+}
+.contact-btn:hover{
+    background: white;
+  color: red;
+  font-weight: bolder;
 }
 .footer-color{
   margin-top: 35px ;
@@ -377,14 +428,22 @@ textarea::placeholder{
 .information{
   width: 20%;
 }
-.information-item{
+.information-item
+{
   display: flex;
   flex-direction: row;
   padding: 15px;
-color: white;}
+color: white;
+}
 
 .information-item > a{
   color: white;
+  transition: 0.5s;
+}
+.information-item > a:hover{
+  color: red;
+  font-weight: bolder;
+  
 }
 .contact-foot{
   width: 30%;
@@ -419,9 +478,12 @@ color: white;}
 
 .social-media-item > a{
   color: white;
+  transition: 1s;
+}
+.social-media-item > a:hover{
+  color: red;
   
 }
-
 
 
 .footer-bottom{
@@ -642,6 +704,28 @@ gap: 80px;
 .App-link {
   color: #61dafb;
 }
+.contact-modal{
+
+  position: absolute;
+
+}
+.contact-modal-header{
+  color: #BDBDBD;
+}
+
+.contact-modal-cls{
+  text-align: end;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  margin-left: 500px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.contact-modal-cls:hover{
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
 
 @keyframes App-logo-spin {
   from {

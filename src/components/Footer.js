@@ -21,23 +21,23 @@ export default function Footer() {
                 </a>
               </div>
               <div className="information-item">
-                <a href="/" target="_blank" rel="noreferrer">
+                <a href="/gallery" target="_blank" rel="noreferrer">
                   Gallery
                 </a>
               </div>
               <div className="information-item">
-                <a href="/" target="_blank" rel="noreferrer">
+                <a href="/projects" target="_blank" rel="noreferrer">
                   Projects
                 </a>
               </div>
               <div className="information-item">
-                <a href="/" target="_blank" rel="noreferrer">
+                <a href="/certification" target="_blank" rel="noreferrer">
                   Certifications
                 </a>
               </div>
               <div className="information-item">
-                <a href="/" target="_blank" rel="noreferrer">
-                  Contacts
+                <a href="/contact" target="_blank" rel="noreferrer">
+                  Contact
                 </a>
               </div>
             </ul>

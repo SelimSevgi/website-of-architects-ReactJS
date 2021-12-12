@@ -116,9 +116,13 @@ export default function SimpleSlider() {
             </a>
           </div>
         </div>
-        <div className="our-pro-bttn">
-          <button>ALL PROJECTS </button>
-        </div>
+
+        <a href="/projects" rel="noreferrer">
+          <div className="our-pro-bttn">
+            {" "}
+            <button>ALL PROJECTS </button>
+          </div>
+        </a>
       </div>
       <div>
         <h1 className="contact-header">Contact Us</h1>

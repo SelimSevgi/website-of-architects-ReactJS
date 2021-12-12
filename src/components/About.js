@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export default function About() {
   return (
     <div className="about">
@@ -38,7 +37,9 @@ export default function About() {
           remaining essentially unchanged.
         </p>
 
-        <button className="about-right-bttn">READ MORE</button>
+        <a href="/gallery" rel="noreferrer">
+          <button className="about-right-bttn">READ MORE</button>{" "}
+        </a>
       </div>
     </div>
   );

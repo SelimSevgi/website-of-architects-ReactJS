@@ -11,6 +11,7 @@
     "react-carousel-minimal": "^1.4.1",
     "react-dom": "^17.0.2",
     "react-leaflet-bing-v2": "^5.2.3",
+    "react-modal": "^3.14.4",
     "react-pure-modal": "^2.1.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
