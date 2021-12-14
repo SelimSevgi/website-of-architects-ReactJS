@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import About from "./About";
+import emailjs from "emailjs-com";
 
 export default function SimpleSlider() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0obrbvn",
+        "template_2tavgfq",
+        form.current,
+        "user_V3lWZKyNg4pF1ip77SF5H"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   var settings = {
     dots: false,
     infinite: true,
@@ -21,7 +45,7 @@ export default function SimpleSlider() {
       <div className="main">
         <div className="main-left">
           <h1>PROJECT NAME</h1>
-          <h2>PROJECT TİTLE</h2>
+          <h2>SELİM WEB-DİZAYN</h2>
         </div>
         <div className="main-right">
           <Slider className="slider" {...settings}>
@@ -127,14 +151,20 @@ export default function SimpleSlider() {
       <div>
         <h1 className="contact-header">Contact Us</h1>
         <div className="contact">
-          <form className="contact-left">
-            <input type="text" id="name" name="name" placeholder="Name"></input>
+          <form className="contact-left" ref={form} onSubmit={sendEmail}>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            ></input>
             <input
               type="tel"
               id="phone"
               name="phone"
-              placeholder="Phone Number*"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="1231231212*"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
               required
             ></input>
             <input
@@ -142,28 +172,34 @@ export default function SimpleSlider() {
               id="email"
               name="email"
               placeholder="E-mail*"
+              required
             ></input>
             <input
               type="text"
               id="interest"
-              name="interest"
+              name="subject"
               placeholder="Interested In"
+              required
             ></input>
             <textarea
               id="message"
               name="message"
               rows="10"
               cols="50"
+              required
               placeholder="Message*"
             ></textarea>
+            <input
+              type="submit"
+              className="contact-btn"
+              value="Send Message"
+              required
+            ></input>
           </form>
 
           <div className="contact-right">
             <img alt="no referrer" src="../images/contact.png" />
           </div>
-        </div>
-        <div>
-          <button className="contact-btn">SEND MAİL</button>
         </div>
       </div>
     </>

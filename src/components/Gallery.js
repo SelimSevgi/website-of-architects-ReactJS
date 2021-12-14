@@ -60,6 +60,7 @@ function App() {
           pauseIconSize="40px"
           slideBackgroundColor="darkgrey"
           slideImageFit="cover"
+          pointer="cursor"
           thumbnails={true}
           thumbnailWidth="100px"
           style={{

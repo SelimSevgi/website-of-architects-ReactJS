@@ -3,7 +3,7 @@ import PureModal from "react-pure-modal";
 import "react-pure-modal/dist/react-pure-modal.min.css";
 
 export default function Modal(props) {
-  const { paragraf, images1, images2, sendCount } = props;
+  const { paragraf, images1, images2, header,  sendCount } = props;
 
   const [modalIsOpen, setIsOpen] = React.useState(!sendCount);
 
@@ -27,10 +27,10 @@ export default function Modal(props) {
       >
         <div className="pro-exp-modal">
           <div className="pro-exp-header">
-            <p>
-              {" "}
-              <span className="pro-exp-head-gri">Sample</span> Project 1{" "}
+            <p className="pro-exp-head-gri" > 
+              Sample
             </p>
+            {header}
           </div>
           <div className="pro-exp-commet">
             <div className="pro-exp-up">

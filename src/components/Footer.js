@@ -7,7 +7,9 @@ export default function Footer() {
         <div className="footer-top">
           <div className="footer-logo">
             <div className="footer-logo-img">
-              <img alt="no referrer" src="../images/footer.png" />
+              <a href="/" rel="noreferrer">
+                <img alt="no referrer" src="../images/footer.png" />
+              </a>{" "}
             </div>
           </div>
           <div className="information">
@@ -30,11 +32,7 @@ export default function Footer() {
                   Projects
                 </a>
               </div>
-              <div className="information-item">
-                <a href="/certification" target="_blank" rel="noreferrer">
-                  Certifications
-                </a>
-              </div>
+
               <div className="information-item">
                 <a href="/contact" target="_blank" rel="noreferrer">
                   Contact

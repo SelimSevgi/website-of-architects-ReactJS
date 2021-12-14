@@ -36,10 +36,11 @@ export default function About() {
           five centuries, but also the leap into electronic typesetting,
           remaining essentially unchanged.
         </p>
-
-        <a href="/gallery" rel="noreferrer">
-          <button className="about-right-bttn">READ MORE</button>{" "}
-        </a>
+        <div className="about-right-bt">
+          <a href="/gallery" rel="noreferrer">
+            <button className="about-right-bttn">READ MORE</button>{" "}
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -40,11 +40,11 @@
   width: 140px;
   height: 80px;
   object-fit: cover;
-  transform:  rotateY(180deg);
+  
   transition: 0.5s;
 }
-.header-logo img:hover{
-  transform:  rotateY(0deg);
+.header-logo img:hover{transform:  rotateY(180deg);
+  
   width: 140px;
 
   
@@ -123,6 +123,10 @@
 .main-left h2{
    line-height: 64px;
   color: #2C2C2C;
+  transition: 1s;
+}
+.main-left h2:hover{
+  color: #61dafb;
 }
 .main-right {
   width: 50%;
@@ -143,7 +147,8 @@
   width: 770px;
 }
 .about{
-  padding-top: 120px;
+  margin-top: 100px;
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -213,9 +218,11 @@
   line-height: 64px;
   color: #E5E5E5;
 }
-
+.about-right a{
+   margin-top: 230px;}
 .about-right button{
   margin-top: 230px;
+  cursor: pointer;
 }
 .m-focus{
   width: 1440px;
@@ -327,6 +334,7 @@ a{
   line-height: 12px;
   letter-spacing: 20%;
   border: none;
+  cursor: pointer;
   transition: 0.5s;
 }
 .our-pro-bttn>button:hover{
@@ -349,11 +357,21 @@ a{
 }
 .contact-left >input , textarea{
   width: 100%;
-  padding: 2%;
-  background: #F3F3F3;
-  border: none;
+  padding: 5px;
+  margin: 5px 0;
+  transition: 0.5s;
 }
-
+.contact-left >input:focus,
+.contact-left >textarea:focus
+{
+  color: black;
+  font-size: 15px;
+  
+}
+.contact-left >input:hover,
+.contact-left >textarea:hover
+{
+  border-color: red;}
 
 input::placeholder{
   
@@ -385,6 +403,7 @@ textarea::placeholder{
   background-color: #2C2C2C;
   border: none;
   transition: 0.5s;
+  cursor: pointer;
 }
 .contact-btn:hover{
     background: white;
@@ -424,6 +443,11 @@ textarea::placeholder{
 .footer-logo-img img{
   width:145px ;
   height: 94px;
+  transition: 0.5s;
+  
+}
+.footer-logo-img img:hover{
+  transform: rotateY(180deg);
 }
 .information{
   width: 20%;
@@ -583,6 +607,15 @@ color: #E5E5E5;
   background: white;
   border: none; width: 222px;
   height: 71px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pro-list-btn button:hover
+{
+color:red;
+background-color: #282c34;
+font-weight: bolder;
+
 }
 
 .pro-exp-modal{
@@ -594,16 +627,18 @@ color: #E5E5E5;
 }
 .pro-exp-header{
   display: flex;
-
+  flex-direction: row;
 justify-content: center;
-}
-.pro-exp-header p{
-color: black;
 font-size: 30px;
+}
+
+.pro-exp-head-gri{
+ color: grey;
+  padding-right: 5px;
 
 }
-.pro-exp-head-gri{
-  color: grey;
+.pro-exp-header > header{
+  
 }
 .pro-exp-up{
   padding: 0 0 20px 0;
@@ -678,18 +713,19 @@ gap: 80px;
   height: 71px;
   background: #333333;
   color: white;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+}
+.contact-left-list-btn button:hover{
+  background: white;
+  color: rgb(255, 0, 0);
+  font-weight: bolder;
 }
 .contact-left-list-article{
   font-size: 30px;
   font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -725,6 +761,158 @@ gap: 80px;
 .contact-modal-cls:hover{
   background-color: rgba(255, 0, 0, 0.3);
 }
+
+@media screen and (max-width: 768px) {
+ .container{
+  width: 100%;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-navigation{
+  display: none;
+ visibility: hidden;
+}
+.header-menu-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin-right: 30px;
+  color: white;
+}
+.header-logo img{
+  width: auto;
+  height: 50px;
+  padding-left: 20px;
+  object-fit: cover;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.main-left{
+padding: 0;
+}
+.main-right h1{
+  padding: 0;
+  line-height: 0px;
+}
+.main-left h2{
+  padding: 0;
+  line-height: 0px;
+  margin-bottom: 30px;
+}
+
+.main-right {
+  width: 414px;
+  height: 450px;
+}
+.slider {
+  width: 414px;
+
+  height:450px;
+}
+.slider-cont{
+  
+  height:450px;
+  object-fit: cover;
+}
+.slider-cont img{
+  object-fit: cover;
+}
+.about{
+  margin-top: 20px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+   width: 100%;
+   background: #FBFBFB;
+
+}
+.about-right-bttn{
+  background: white;
+  color: #333333;
+  line-height: 0px;
+  letter-spacing: 20%;
+  overflow: hidden;
+  border:none;
+  transition: 0.5s;
+}
+.about-right-bttn:hover{
+    background: #333333;
+  color: red;
+  font-weight: bolder;
+}
+
+.foto1 {
+  grid-area: foto1;
+  display: flex;
+  align-items: center;
+}
+.foto2 {
+  grid-area: foto2;
+  display: flex;
+  align-items: center;
+}
+.foto3 {
+  grid-area: foto3;
+  display: flex;
+  align-items: center;
+}
+  .about-left{
+    display: grid;
+    grid-template-areas:
+    'foto1 foto3'
+    'foto2 foto3';
+    grid-gap: 10px;
+   padding: 10px;
+    width: 100%;
+   
+  }
+  .about-left-image-3{
+    height: 150px;
+        width: 180px;
+    object-fit: cover;
+
+  }
+    .about-left-image-1,.about-left-image-2{
+    width: 180px;
+    height: 100px;
+    object-fit: cover;
+    }
+.about-right{
+ display: flex;
+ flex-direction: column;
+ width: 100% ;
+ padding: 0;
+}
+
+.about-right h1{
+
+  align-items: center;
+  line-height: 0px;
+  color: #E5E5E5;
+}
+.about-right a{
+   margin-top: 0px;}
+.about-right button{
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+
+
+ }
+  
+
+
+
 
 
 @keyframes App-logo-spin {

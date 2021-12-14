@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
+import emailjs from "emailjs-com";
 
 // Modal setting //
 
@@ -32,6 +33,31 @@ export default function Contact() {
     setIsOpen(false);
   }
   // -----
+
+  // EmailJs------
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0obrbvn",
+        "template_2tavgfq",
+        form.current,
+        "user_V3lWZKyNg4pF1ip77SF5H"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+  //-----
   return (
     <div>
       <div className="contactpage-header">
@@ -67,56 +93,67 @@ export default function Contact() {
                 style={customStyles}
                 //contentLabel="Example Modal"
               >
-              <div className="contact-modal-border">
-                <h1 className="contact-modal-header">Contact Us</h1>
-                <button className="contact-modal-cls" onClick={closeModal}>
-                  {" "}
-                  <i class="fa fa-times-circle fa-2x"></i>
-                </button>
-                <div className="contact">
-                  <form className="contact-left">
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                    ></input>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="Phone Number*"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-                      required
-                    ></input>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="E-mail*"
-                    ></input>
-                    <input
-                      type="text"
-                      id="interest"
-                      name="interest"
-                      placeholder="Interested In"
-                    ></input>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="10"
-                      cols="50"
-                      placeholder="Message*"
-                    ></textarea>
-                  </form>
+                <div className="contact-modal-border">
+                  <h1 className="contact-modal-header">Contact Us</h1>
+                  <button className="contact-modal-cls" onClick={closeModal}>
+                    {" "}
+                    <i class="fa fa-times-circle fa-2x"></i>
+                  </button>
+                  <div className="contact">
+                    <form
+                      className="contact-left"
+                      ref={form}
+                      onSubmit={sendEmail}
+                    >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        required // boş girilmesini önlemek için
+                      ></input>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="1231231212*"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+                        required
+                      ></input>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="E-mail*"
+                        required
+                      ></input>
+                      <input
+                        type="text"
+                        id="interest"
+                        name="interest"
+                        placeholder="Interested In"
+                        required
+                      ></input>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="10"
+                        cols="50"
+                        placeholder="Message*"
+                        required
+                      ></textarea>
+                      <input
+                        type="submit"
+                        className="contact-btn"
+                        value="Send Message"
+                      ></input>
+                    </form>
 
-                  <div className="contact-right">
-                    <img alt="no referrer" src="../images/contact.png" />
+                    <div className="contact-right">
+                      <img alt="no referrer" src="../images/contact.png" />
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <button className="contact-btn">SEND MAİL</button>
-                </div></div>
               </Modal>
             </div>
           </div>
