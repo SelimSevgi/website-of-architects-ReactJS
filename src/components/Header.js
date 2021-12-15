@@ -18,7 +18,7 @@ export default function Header() {
             </a>
           </div>
           <div className="header-menu-btn">
-            <i class="fas fa-bars fa-2x"></i>
+            <i className="fas fa-bars fa-2x"></i>
           </div>
 
           <div className="header-navigation">

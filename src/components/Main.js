@@ -71,7 +71,7 @@ export default function SimpleSlider() {
         </div>
       </div>
       <About />
-      <div>
+      <div className="m-focus-div">
         <h1 className="m-focus-header">Main Focus/Mission Statement</h1>
         <div className="m-focus">
           <div className="m-focus-1">
@@ -90,7 +90,7 @@ export default function SimpleSlider() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="our-proje">
         <h1 className="our-proje-header">Our Projects</h1>
 
         <div className="our-proje-foto">
@@ -148,11 +148,12 @@ export default function SimpleSlider() {
           </div>
         </a>
       </div>
-      <div>
-        <h1 className="contact-header">Contact Us</h1>
+     
+        
         <div className="contact">
+        
           <form className="contact-left" ref={form} onSubmit={sendEmail}>
-            <input
+           <h1 className="contact-header">Contact Us</h1> <input
               type="text"
               id="name"
               name="name"
@@ -201,7 +202,7 @@ export default function SimpleSlider() {
             <img alt="no referrer" src="../images/contact.png" />
           </div>
         </div>
-      </div>
+      
     </>
   );
 }

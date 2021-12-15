@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import ReactDOM from "react-dom";
 import Modal from "react-modal";
 import emailjs from "emailjs-com";
 
@@ -22,7 +21,7 @@ const customStyles = {
 export default function Contact() {
   // Modal ilgili kısımlar
   // -----
-  let subtitle;
+
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
@@ -97,7 +96,7 @@ export default function Contact() {
                   <h1 className="contact-modal-header">Contact Us</h1>
                   <button className="contact-modal-cls" onClick={closeModal}>
                     {" "}
-                    <i class="fa fa-times-circle fa-2x"></i>
+                    <i className="fa fa-times-circle fa-2x"></i>
                   </button>
                   <div className="contact">
                     <form
@@ -159,7 +158,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="contactpage-right">
-          <img src="../images/contact-page-loc.png"></img>
+          <img src="../images/contact-page-loc.png" alt="noreferrer"></img>
         </div>
       </div>
     </div>
