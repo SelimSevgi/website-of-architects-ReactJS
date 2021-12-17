@@ -36,43 +36,41 @@ function App() {
     fontWeight: "bold",
   };
   return (
-    <>
-      <div className="gallery">
-        <div className="gallery-header">
-          <h1>
-            <span className="pro-header-gri">Photo</span>
-            <br />
-            Gallery
-          </h1>
-        </div>
-        <Carousel
-          className="gallery-carousel"
-          data={data}
-          time={2000}
-          width="1600px"
-          height="500px"
-          radius="10px"
-          slideNumber={true}
-          slideNumberStyle={slideNumberStyle}
-          automatic={true}
-          dots={true}
-          pauseIconColor="white"
-          pauseIconSize="40px"
-          slideBackgroundColor="darkgrey"
-          slideImageFit="cover"
-          pointer="cursor"
-          thumbnails={true}
-          thumbnailWidth="100px"
-          style={{
-            textAlign: "center",
-            maxWidth: "1600px",
-            maxHeight: "500px",
-            margin: "20px auto",
-            padding: "0px 0px 100px 0px",
-          }}
-        />
+    <div className="gallery">
+      <div className="gallery-header">
+        <h1>
+          <span className="pro-header-gri">Photo</span>
+          <br />
+          Gallery
+        </h1>
       </div>
-    </>
+      <Carousel
+        className="gallery-carousel"
+        data={data}
+        time={2000}
+        width="100%"
+        height="500px"
+        radius="10px"
+        slideNumber={true}
+        slideNumberStyle={slideNumberStyle}
+        automatic={true}
+        dots={true}
+        pauseIconColor="white"
+        pauseIconSize="40px"
+        slideBackgroundColor="darkgrey"
+        slideImageFit="cover"
+        pointer="cursor"
+        thumbnails={true}
+        thumbnailWidth="100px"
+        style={{
+          textAlign: "center",
+          maxWidth: "1600px",
+          maxHeight: "500px",
+          margin: "20px auto",
+          padding: "0px 0px 100px 0px",
+        }}
+      />
+    </div>
   );
 }
 

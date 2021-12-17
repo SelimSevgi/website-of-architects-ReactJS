@@ -166,7 +166,7 @@ export default function Projects() {
           sendCount={count}
         />
       </div>
-      ;
+      
     </div>
   );
 }

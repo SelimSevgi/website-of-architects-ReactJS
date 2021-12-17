@@ -753,14 +753,22 @@ textarea::placeholder {
   .main-left {
     padding: 0;
   }
-  .main-right h1 {
-    padding: 0;
-    line-height: 0px;
+
+  .main-left h1 {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #e5e5e5;
   }
   .main-left h2 {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
     padding: 0;
-    line-height: 0px;
-    margin-bottom: 30px;
+    line-height: 10px;
+    margin-bottom: 20px;
   }
 
   .main-right {
@@ -1155,6 +1163,150 @@ textarea::placeholder {
   .footer-bottom span {
     color: brown;
     font-weight: bold;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .gallery-carousel {
+    width: 400px !important;
+  }
+
+  .pro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pro-header h1 {
+    color: black;
+  }
+  .pro-header-gri {
+    color: #e5e5e5;
+  }
+
+  .pro-list-item {
+    background: #e5e5e5;
+    display: flex;
+
+    flex-direction: column;
+    margin: 2% 0;
+  }
+  .pro-list-right {
+    padding-right: 0px;
+  }
+  .pro-list-right img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .pro-list-left {
+    padding: 20px 0px;
+  }
+  .pro-list-left h2 {
+    color: grey;
+    font-weight: 0;
+    font-size: 15px;
+  }
+  .pro-list-p {
+    padding: 0;
+  }
+  .pro-list-p p {
+    font-weight: 0;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .pro-list-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .pro-list-btn button {
+    justify-content: center;
+    background: white;
+    border: none;
+    width: 30%;
+    height: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .pro-list-btn button:hover {
+    color: red;
+    background-color: #282c34;
+    font-weight: bolder;
+  }
+
+  .pure-modal-backdrop {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    width: 100%;
+    height: auto;
+  }
+  .panel {
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  .pro-exp-modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .pro-exp-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .pro-exp-head-gri {
+    color: grey;
+    padding-right: 5px;
+  }
+
+  .pro-exp-up {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pro-exp-up img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+  .pro-exp-mid {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .pro-exp-right {
+    justify-content: center;
+    padding-bottom: 0px;
+  }
+  .pro-exp-down img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
